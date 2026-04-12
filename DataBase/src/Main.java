@@ -12,7 +12,7 @@ public class Main {
                 "jdbc:mysql://localhost:3306/test",
                 "root",
                 "Shraddha@19"
-                Connection con=DriverManager.getConnection(url,user,password);
+                // Connection con=DriverManager.getConnection(url,user,password);
             );
     Statement stmt = con.createStatement();
     String sql="Create table if not exists student(id int primary key auto_increment,name varchar(20),age int)";
