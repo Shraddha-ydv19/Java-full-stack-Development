@@ -49,7 +49,7 @@ public class GuiToDoList {
         btn2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
                 lm.clear();
-            //    / ta.setText("");
+                ta.setText("");
             }
         });
 

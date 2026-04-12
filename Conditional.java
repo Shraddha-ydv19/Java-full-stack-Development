@@ -14,9 +14,9 @@ public class Conditional{
 //             System.out.println("wrong password");
 //         }
 
- Scanner sc = new Scanner(System.in);
+ Scanner scc = new Scanner(System.in);
         System.out.println("enter a number");
-        int num =sc.nextInt();
+        int num =scc.nextInt();
         if(num>0){
             System.out.println("positive number");
         }

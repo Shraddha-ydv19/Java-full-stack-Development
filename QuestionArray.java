@@ -110,9 +110,9 @@ public class QuestionArray {
 
 
     //find index of given array element...
-    Scanner sc =new Scanner(System.in);
+    Scanner s =new Scanner(System.in);
     System.out.println("enter the element ");
-    int element =sc.nextInt();
+    int element =s.nextInt();
     int index=-1;
     for(int i=0;i<p;i++){
         if(arr[i]==element){
@@ -143,6 +143,6 @@ public class QuestionArray {
     System.out.println("majority element is not found");
 
 
-    
+
 }
 }
