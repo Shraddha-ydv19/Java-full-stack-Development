@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 public class DeleteStudent {
     
 
- public static void main(String[] args){
+ public DeleteStudent(){
         JFrame f=new JFrame("Student Details");
         f.setSize(400,400);
         f.setLayout(null);

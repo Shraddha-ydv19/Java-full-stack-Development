@@ -4,7 +4,7 @@ import javax.swing.table.DefaultTableModel;
 
 import java.awt.*;
 public class SearchStudent {
-    public static void main(String[] args){
+    public SearchStudent(){
             JFrame f=new JFrame("Search Student");
             f.setSize(400,400);
             f.setLayout(null);
@@ -34,7 +34,7 @@ DefaultTableModel model = new DefaultTableModel(columns, 0);
 
 // JTable with model
 JTable table = new JTable(model);
-model.addRow(new Object[]{"Shraddha", "BTech", "100"});
+//model.addRow(new Object[]{"Shraddha", "BTech", "100"});
 
 // Scroll pane (IMPORTANT for table)
 JScrollPane sp = new JScrollPane(table);
