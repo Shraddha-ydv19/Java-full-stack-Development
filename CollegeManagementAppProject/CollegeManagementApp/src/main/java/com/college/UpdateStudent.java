@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
 
 
 public class UpdateStudent {
-    public static void main(String[] args){
+    public UpdateStudent(){
             JFrame f=new JFrame("Update Student");
             f.setSize(500,600);
             f.setLayout(null);
