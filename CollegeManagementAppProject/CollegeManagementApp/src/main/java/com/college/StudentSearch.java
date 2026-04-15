@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class StudentSearch {
-    public static void main(String[] args){
+    public StudentSearch(){
           JFrame f=new JFrame("Search Student");
             f.setSize(400,400);
             f.setLayout(null);

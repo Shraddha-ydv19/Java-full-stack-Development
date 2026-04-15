@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) {
 
         JFrame f = new JFrame("College Management System");
-
+  
         f.setSize(400, 400);
         f.setLayout(null);
         f.getContentPane().setBackground(Color.BLACK);
@@ -31,13 +31,21 @@ public class App {
         b1.setBackground(Color.BLUE);
         b1.setForeground(Color.WHITE);
         f.add(b1);
-
-        JButton b2=new JButton("User");
+         b1.addActionListener(e -> {
+    f.dispose();
+    new Admin();
+});
+      
+        JButton b2=new JButton("Search");
         b2.setBounds(220, 200,100,30);
         b2.setBackground(Color.BLUE);
         b2.setForeground(Color.WHITE);
         f.add(b2);
-
+        b2.addActionListener(e -> {
+            f.dispose();
+            new StudentSearch();
+        }); 
+        
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close button fix
         f.setVisible(true); // ⭐ MOST IMPORTANT
     }
