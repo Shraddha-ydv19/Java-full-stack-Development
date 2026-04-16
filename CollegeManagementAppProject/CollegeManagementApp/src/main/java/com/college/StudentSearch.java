@@ -26,10 +26,16 @@ public class StudentSearch {
             f.add(t);
             
             JButton b=new JButton("Search");
-            b.setBounds(150, 120,100,30);
+            b.setBounds(70, 120,100,30);
             b.setBackground(Color.BLUE);
             b.setForeground(Color.WHITE);
             f.add(b);
+
+             JButton b2=new JButton("Upload");
+            b2.setBounds(200, 120,100,30);
+            b2.setBackground(Color.BLUE);
+            b2.setForeground(Color.WHITE);
+            f.add(b2);
 
                 // Table columns
 String[] columns = {"Name", "Class", "Roll Number"};

@@ -24,6 +24,12 @@ public class SearchStudent {
             b.setBackground(Color.BLUE);
             b.setForeground(Color.WHITE);
             f.add(b);
+ 
+               JButton b2=new JButton("Upload");
+            b2.setBounds(190, 120,100,30);
+            b2.setBackground(Color.BLUE);
+            b2.setForeground(Color.WHITE);
+            f.add(b2);
 
                 // Table columns
 String[] columns = {"Name", "Class", "Roll Number"};
