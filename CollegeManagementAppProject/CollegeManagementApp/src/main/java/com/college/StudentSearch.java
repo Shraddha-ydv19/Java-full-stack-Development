@@ -1,9 +1,12 @@
 package com.college;
 // import javax.swing.*;
 import java.awt.*;
+import java.sql.*;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -36,6 +39,23 @@ public class StudentSearch {
             b2.setBackground(Color.BLUE);
             b2.setForeground(Color.WHITE);
             f.add(b2);
+            
+            b2.addActionListener(e ->{
+                try{
+                    //Load the Driver...
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    //Create Connection....
+                    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/?user=root", "root", "Shraddha@19");
+                    //String Query
+                    String sql="Select *from teacher";
+                    PreparedStatement pstmt=con.prepareStatement(sql);
+                    ResultSet rs=pstmt.executeQuery();
+
+                }
+                catch (Exception ex) {
+        JOptionPane.showMessageDialog(null, ex.getMessage());
+    }
+            });
 
                 // Table columns
 String[] columns = {"Name", "Class", "Roll Number"};
