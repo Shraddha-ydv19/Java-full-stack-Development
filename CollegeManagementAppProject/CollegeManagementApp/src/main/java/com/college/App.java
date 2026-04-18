@@ -47,6 +47,6 @@ public class App {
         }); 
         
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close button fix
-        f.setVisible(true); // ⭐ MOST IMPORTANT
+        f.setVisible(true); //it is important to make frame visible otherwise it will not show on the screen
     }
 }
