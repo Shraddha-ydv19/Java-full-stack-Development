@@ -18,7 +18,7 @@ public class DeleteStudent {
 
         l.setForeground(Color.WHITE);
         l.setFont(new Font("Italic", Font.BOLD, 26));
-        f.add(l); // Add the label to the frame
+        f.add(l);
 
 
        
@@ -48,25 +48,21 @@ public class DeleteStudent {
         b1.setForeground(Color.WHITE);
         f.add(b1);
 
-       // Table columns
 String[] columns = {"Name", "Class", "Roll Number"};
 
 
-// Table model
 DefaultTableModel model = new DefaultTableModel(columns, 0);
 
-// JTable with model
 JTable table = new JTable(model);
 model.addRow(new Object[]{"Shraddha", "BTech", "100"});
 
-// Scroll pane (IMPORTANT for table)
 JScrollPane sp = new JScrollPane(table);
 sp.setBounds(50, 200, 300, 120);
 f.add(sp);
         
        
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close button fix
-        f.setVisible(true); // ⭐ MOST IMPORTANT
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+        f.setVisible(true); 
 
     }
 }

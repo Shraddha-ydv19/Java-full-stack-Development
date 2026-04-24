@@ -61,12 +61,12 @@ public class UpdateStudent {
             sp.setBounds(50, 320, 300, 120);
             f.add(sp);
 
-             // Table columns   
+            
 String[] columns = {"Name", "Class", "Roll Number"};
 
-// Table model
+
 DefaultTableModel model = new DefaultTableModel(columns, 0);
-// JTable with model
+
 table.setModel(model);
 
 

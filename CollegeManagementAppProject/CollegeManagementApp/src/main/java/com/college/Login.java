@@ -32,7 +32,7 @@ public class Login {
         l2.setBounds(50, 130, 100, 30); 
         l2.setForeground(Color.WHITE);
         l2.setFont(new Font("Arial", Font.BOLD, 14));
-        f.add(l2); // Add the label to the frame
+        f.add(l2); 
         JPasswordField t2=new JPasswordField();
         t2.setBounds(150, 130, 150, 30);
         f.add(t2);
@@ -44,8 +44,8 @@ public class Login {
         f.add(b1);
         
 
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close button fix
-        f.setVisible(true); // ⭐ MOST IMPORTANT
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+        f.setVisible(true); 
 
     }
 }

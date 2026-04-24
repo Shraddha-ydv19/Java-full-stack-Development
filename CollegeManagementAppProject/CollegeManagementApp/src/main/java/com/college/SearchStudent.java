@@ -31,18 +31,17 @@ public class SearchStudent {
             b2.setForeground(Color.WHITE);
             f.add(b2);
 
-                // Table columns
+               
 String[] columns = {"Name", "Class", "Roll Number"};
 
 
-// Table model
+
 DefaultTableModel model = new DefaultTableModel(columns, 0);
 
-// JTable with model
 JTable table = new JTable(model);
 //model.addRow(new Object[]{"Shraddha", "BTech", "100"});
 
-// Scroll pane (IMPORTANT for table)
+
 JScrollPane sp = new JScrollPane(table);
 sp.setBounds(50, 200, 300, 120);
 f.add(sp);

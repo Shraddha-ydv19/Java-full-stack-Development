@@ -46,7 +46,6 @@ public class App {
             new StudentSearch();
         }); 
         
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close button fix
-        f.setVisible(true); //it is important to make frame visible otherwise it will not show on the screen
-    }
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+        f.setVisible(true);
 }
